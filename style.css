@@ -1,0 +1,75 @@
+/* Professional CA Branding */
+:root {
+    --primary-blue: #002D62; /* Trust & Stability */
+    --accent-gold: #C5A022;   /* Excellence & Value */
+    --light-bg: #F8F9FA;
+    --text-dark: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+header {
+    background: var(--primary-blue);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-gold);
+}
+
+nav {
+    background: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin: 0 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-gold);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: var(--primary-blue);
+    border-left: 5px solid var(--accent-gold);
+    padding-left: 15px;
+}
+
+.due-dates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.due-dates-table th, .due-dates-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.due-dates-table th {
+    background-color: var(--primary-blue);
+    color: white;
+}
