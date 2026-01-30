@@ -2,77 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rajan & Associates | Chartered Accountants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile | Tech & Compliance</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
-        header { background: #002D62; color: white; padding: 2rem; text-align: center; }
-        nav { background: #f4f4f4; padding: 1rem; text-align: center; border-bottom: 1px solid #ddd; }
-        nav a { margin: 0 15px; text-decoration: none; color: #002D62; font-weight: bold; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        footer { text-align: center; padding: 20px; background: #eee; font-size: 0.9rem; }
-
-        <div class="container">
-    <h2>Professional GST Calculator</h2>
-    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 400px;">
-        <label>Base Amount (₹):</label>
-        <input type="number" id="amount" placeholder="e.g. 10000" style="padding: 8px;">
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+            --light: #ffffff;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .container { 
+            background: var(--light); 
+            width: 90%;
+            max-width: 500px;
+            padding: 2.5rem; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            text-align: center;
+        }
+        h1 { color: var(--primary); margin-bottom: 0.5rem; }
+        p.subtitle { color: #7f8c8d; font-style: italic; margin-bottom: 2rem; }
         
-        <label>GST Rate (%):</label>
-        <select id="gstRate" style="padding: 8px;">
-            <option value="5">5%</option>
-            <option value="12">12%</option>
-            <option value="18" selected>18%</option>
-            <option value="28">28%</option>
-        </select>
+        .service-list { text-align: left; background: #f9f9f9; padding: 1rem; border-radius: 10px; margin-bottom: 2rem; }
+        .service-item { display: flex; align-items: center; margin: 10px 0; font-size: 0.95rem; }
+        .icon { color: var(--accent); margin-right: 10px; font-weight: bold; }
 
-        <label>
-            <input type="checkbox" id="inclusive"> Amount is GST Inclusive
-        </label>
-
-        <button onclick="calculateGST()" style="background: #002D62; color: white; padding: 10px; border: none; cursor: pointer;">Calculate</button>
-    </div>
-
-    <div style="margin-top: 20px; background: #f0f0f0; padding: 15px; border-radius: 5px;">
-        <p>Net Amount: ₹<span id="resNet">0.00</span></p>
-        <p>GST Amount: ₹<span id="resGST">0.00</span></p>
-        <p><strong>Total Amount: ₹<span id="resTotal">0.00</span></strong></p>
-    </div>
-</div>
-
-<script src="script.js"></script>
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: var(--accent); }
+        
+        .footer { margin-top: 2rem; font-size: 0.8rem; color: #bdc3c7; }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Your Name/Project Name</h1>
+        <p class="subtitle">Software Solutions & Financial Compliance</p>
+        
+        <div class="service-list">
+            <div class="service-item"><span class="icon">✓</span> Custom Software Development</div>
+            <div class="service-item"><span class="icon">✓</span> CA-Ready Financial Reporting</div>
+            <div class="service-item"><span class="icon">✓</span> GST & Export Compliance Tools</div>
+            <div class="service-item"><span class="icon">✓</span> Open Source Contributions</div>
+        </div>
 
-<header>
-    <h1>Rajan & Associates</h1>
-    <p>Chartered Accountants | Estd: [Year]</p>
-</header>
+        <p>Currently open to consultations for tech-driven business setups.</p>
+        
+        <a href="mailto:your-email@example.com" class="btn">Get in Touch</a>
 
-<nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container" id="about">
-    <h2>Rajan & Associates</h2>
-    <p>We are a firm of Chartered Accountants registered with the ICAI (FRN: [Your FRN]). Our team is committed to professional excellence and integrity.</p>
-</div>
-
-<div class="container" id="services">
-    <h2>Professional Services</h2>
-    <p>Information regarding our services is provided upon request as per ICAI guidelines. Click below to view areas of expertise:</p>
-    <ul>
-        <li>Taxation & Compliance</li>
-        <li>Audit & Assurance</li>
-        <li>Management Consultancy</li>
-    </ul>
-</div>
-
-<footer>
-    &copy; 2026 Rajan & Associates. Last Updated: January 30, 2026.
-</footer>
-
+        <div class="footer">
+            Built with GitHub Pages • 2026
+        </div>
+    </div>
 </body>
 </html>
